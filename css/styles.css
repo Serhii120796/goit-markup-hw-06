@@ -654,12 +654,12 @@ body {
 }
 
 .footer-form-wraper {
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .footer-form-label {
-margin-right: 24px;
+  margin-right: 24px;
 }
 
 .footer-form-input {
@@ -679,12 +679,10 @@ margin-right: 24px;
   color: var(--primary-text-color-theme-dark);
 }
 
-.button-wraper {
-position: relative;
-}
-
 .footer-button {
-  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   min-width: 165px;
   min-height: 40px;
   padding: 8px 24px;
@@ -708,12 +706,8 @@ position: relative;
 }
 
 .telegram-icon {
-position: absolute;
-top: 50%;
-right: 24px;
-transform: translateY(-50%);
-fill: var(--primary-text-color-theme-dark);
-pointer-events: none;
+  fill: currentColor;
+  flex-shrink: 0;
 }
 
 /* =====================================/FOOTER================================ */
