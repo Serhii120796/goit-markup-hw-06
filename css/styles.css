@@ -665,10 +665,19 @@ body {
 .footer-form-input {
   width: 264px;
   padding: 8px 16px;
+    font-size: 12px;
+      line-height: 2;
+  color: var(--primary-text-color-theme-dark);
   background-color: inherit;
   border: 1px solid #ffffff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  transition: border-color 250ms var(--timing-function);
+}
+
+.footer-form-input:focus {
+  outline: none;
+  border-color: var(--batton-background-theme-dark);
 }
 
 .footer-form-input::placeholder {
@@ -682,8 +691,7 @@ body {
 .footer-button {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  min-width: 165px;
+  width: 165px;
   min-height: 40px;
   padding: 8px 24px;
   font-family: inherit;
@@ -703,6 +711,10 @@ body {
 .footer-button:hover,
 .footer-button:focus {
   background-color: var(--batton-background-accent);
+}
+
+.footer-button-desc {
+  margin-right: 16px;
 }
 
 .telegram-icon {
